@@ -8,7 +8,8 @@ def key_for_min_value(name_hash)
     return nil
   else
     name_hash.each_with_index do |(k,v), i|
-
+      if i == 0
+        smallest_value = v
+      
     end
-
 end
