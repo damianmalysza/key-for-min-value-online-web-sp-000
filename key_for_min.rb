@@ -9,10 +9,10 @@ def key_for_min_value(name_hash)
     return nil
   else
     name_hash.each_with_index do |(k,v), i|
-      binding.pry
       if i == 0
         smallest_value = v
       else
+        binding.pry
         smallest_key = k if v < smallest_value
       end
     end
