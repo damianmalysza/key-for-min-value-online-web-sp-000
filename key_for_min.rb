@@ -7,13 +7,6 @@ def key_for_min_value(name_hash)
   if name_hash == {}
     return nil
   else
-    name_hash.each do |k,v|
-      if v < smallest_value
-        smallest_key = k
-      else
-        smallest_value = v
-      end
-    end
-  end
-  smallest_key
+    name_hash.each_with_index do |(k,v), i|
+
 end
